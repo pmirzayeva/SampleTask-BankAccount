@@ -20,7 +20,7 @@ const bankAccount={
 
 
     addMoney: function(m){
-        if(this.balance  > this.limit || isNaN(m)){
+        if(this.balance + m > this.limit || isNaN(m)){
 
             console.log("invalid");
 
