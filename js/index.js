@@ -1,13 +1,17 @@
 const addBtn=document.querySelector("#addBtn")
 const sendBtn=document.querySelector("#sendBtn")
 const displayBtn=document.querySelector("#displayBtn")
+const enterBtn=document.querySelector("#enterBtn")
+
 const moneyInput=document.querySelector("#moneyInput")
 const balanceEl=document.querySelector("#balanceEl")
 const list=document.querySelector("#list")
 const alertContainer = document.querySelector("#myAlert");
 const alertContainer2 = document.querySelector("#myAlert2");
-const enterBtn=document.querySelector("#enterBtn")
 
+
+const title=document.querySelector("#title")
+const floatingInput=document.querySelector("#floatingInput")
 
 
 const bankAccount={
@@ -16,7 +20,7 @@ const bankAccount={
     limit:1000,
     info:[],
     date:new Date(),
-    userNameInfo:[],
+    floatingInput:[],
 
 
     addMoney: function(m){
@@ -95,7 +99,7 @@ const bankAccount={
     },
 
     displayUser:function(){
-        title.innerHTML=`Welcome,${userNameInfo.value}!`
+        title.innerHTML=`Welcome,${floatingInput.value}!`
     },
 
 }
